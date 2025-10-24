@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registation Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background-color: navy;
+        color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        width: 400px;
+        box-sizing: border-box;
+      }
+
+      input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: white;
+        color: navy;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1a1aff;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://ngujojhon.github.io/submitted/submit.html" method="get">
+      <h2>REGISTRATION FORM</h2>
+      Name: <input type="text" name="fullname" placeholder="Last Name, First Name, MI" required>
+
+      Age: <input type="number" name="age" placeholder="Age">
+
+      Email: <input type="text" name="email" placeholder="Email" required>
+
+      Civil Status:  
+      <select name="civilstatus">
+        <option></option>
+        <option>Single</option>
+        <option>Married</option>
+        <option>Widowed</option>
+      </select>
+
+      Gender: 
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="female"> Female
+
+      Sports: <input type="text" name="sports" placeholder="Favorite Sports?">
+
+      Address: <input type="text" name="adress" placeholder="Address">
+
+      Mobile Number: <input type="number" name="mobile" placeholder="Mobile Number" required>
+
+      Educational Level:
+      <select name="edecation">
+        <option></option>
+        <option>Elementary Graduate</option>
+        <option>High School Graduate</option>
+        <option>Senior High School Graduate</option>
+        <option>College Level</option>
+        <option>Vocational</option>
+        <option>Master's Degree</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
